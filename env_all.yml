@@ -12,8 +12,6 @@ dependencies:
   - deepchem
   - mordred
   - networkx
-  - openeye
-  - openeye-toolkits
   - pip:
     - albumentations
     - bokeh
@@ -64,7 +62,7 @@ dependencies:
     - streamlit
     - torch==1.9.1+cu102
     - torchvision==0.10.1+cu102
-    - torchaudio===0.9.1
+    - torchaudio==0.9.1
     - -f https://download.pytorch.org/whl/torch_stable.html    
     - torch-scatter 
     - torch-sparse
@@ -72,6 +70,8 @@ dependencies:
     - torch-spline-conv 
     - torch-geometric 
     - -f https://data.pyg.org/whl/torch-1.9.0+cu102.html
+    - torchdrug
+    - dgl-cu102
     - -f https://data.dgl.ai/wheels/repo.html
     - transformers
     - tensorflow
