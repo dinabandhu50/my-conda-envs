@@ -9,7 +9,6 @@ dependencies:
   - jupyter
   - nbconvert
   - rdkit
-  - deepchem
   - mordred
   - networkx
   - pip:
@@ -22,7 +21,6 @@ dependencies:
     - "dask[complete]"
     - datatable
     - datashader
-    - dgl-cu102 
     - feature-engine
     - flair
     - fastapi
@@ -60,6 +58,7 @@ dependencies:
     - setuptools
     - scrapy
     - streamlit
+    - selenium
     - torch==1.9.1+cu102
     - torchvision==0.10.1+cu102
     - torchaudio==0.9.1

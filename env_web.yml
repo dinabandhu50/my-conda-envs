@@ -1,0 +1,20 @@
+name: gui
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.8
+  - pip
+  - nb_conda
+  - jupyter
+  - pip:
+    - pandas
+    - seaborn
+    - scikit-learn
+    - selenium
+    - beautifulsoup4
+    - django
+    - Flask
+    - Flask-WTF
+    - fastapi
+    - uvicorn[standard]
