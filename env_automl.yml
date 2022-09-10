@@ -1,4 +1,4 @@
-name: ml
+name: automl
 channels:
   - conda-forge
   - defaults
@@ -9,21 +9,17 @@ dependencies:
   - jupyter
   - rdkit
   - networkx
+  - auto-sklearn
   - pip:
-    - kaggle
     - pandas
     - datatable
     - seaborn
-    - datashader
-    - bokeh
-    - holoviews
     - yellowbrick
     - sweetviz
     - pandas-profiling
     - category-encoders
     - feature-engine
     - shap
-    - BorutaShap
     - umap-learn
     - iterative-stratification
     - scikit-learn
@@ -35,6 +31,18 @@ dependencies:
     - optuna
     - scikit-optimize
     - hyperopt
+    - requests
+    - tabulate
+    - future
+    - h2o
+    - -f http://h2o-release.s3.amazonaws.com/h2o/latest_stable_Py.html
+    - deap 
+    - update_checker 
+    - tqdm 
+    - stopit
+    - tpot
+    - mljar-supervised
+    - mlflow
     - opencv-python
     - nltk
     - spacy
@@ -48,24 +56,16 @@ dependencies:
     - torch-spline-conv 
     - torch-geometric 
     - -f https://data.pyg.org/whl/torch-1.10.0+cu102.html
-    - torchdrug
-    - dgl-cu102
-    - -f https://data.dgl.ai/wheels/repo.html
-    - pytorch-tabnet
     - pretrainedmodels
     - albumentations
     - transformers
-    - flair
     - segmentation-models-pytorch
     - pytorch-lightning
     - tensorflow
     - tensorboard
     - setuptools
-    - requests
     - beautifulsoup4
     - scrapy
     - fastapi
     - uvicorn[standard]
-    - Flask
-    - Flask-WTF
     - sphinx

@@ -1,4 +1,4 @@
-name: gui
+name: web
 channels:
   - conda-forge
   - defaults

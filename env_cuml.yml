@@ -1,27 +1,35 @@
-name: ml
+name: cuml
 channels:
-  - conda-forge
   - defaults
+  - rapidsai
+  - nvidia
+  - conda-forge
 dependencies:
-  - python==3.8
+  - python==3.9
   - pip
   - nb_conda
   - jupyter
   - rdkit
   - networkx
+  - rapids=22.04 
+  - cudatoolkit=11.5 
+  - dask-sql
   - pip:
     - kaggle
     - pandas
+    - "dask[complete]"
+    - dask-cuda
     - datatable
     - seaborn
     - datashader
-    - bokeh
-    - holoviews
     - yellowbrick
     - sweetviz
     - pandas-profiling
     - category-encoders
     - feature-engine
+    - holidays
+    - tsfresh
+    - python-dateutil
     - shap
     - BorutaShap
     - umap-learn
@@ -38,17 +46,15 @@ dependencies:
     - opencv-python
     - nltk
     - spacy
-    - torch==1.8.2+cu102 
-    - torchvision==0.9.2+cu102 
-    - torchaudio==0.8.2 
-    - -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html
+    - torch
+    - torchvision
+    - torchaudio
     - torch-scatter 
     - torch-sparse 
     - torch-cluster
     - torch-spline-conv 
     - torch-geometric 
     - -f https://data.pyg.org/whl/torch-1.10.0+cu102.html
-    - torchdrug
     - dgl-cu102
     - -f https://data.dgl.ai/wheels/repo.html
     - pytorch-tabnet
@@ -59,6 +65,7 @@ dependencies:
     - segmentation-models-pytorch
     - pytorch-lightning
     - tensorflow
+    - deepchem
     - tensorboard
     - setuptools
     - requests

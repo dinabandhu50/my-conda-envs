@@ -1,0 +1,14 @@
+name: fed
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.9
+  - pip
+  - nb_conda
+  - jupyter
+  - pip:
+    - pandas
+    - seaborn
+    - syft
+    - hagrid
